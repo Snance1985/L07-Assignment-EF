@@ -1,0 +1,19 @@
+@model l07_assignment.Models.Job
+
+@{
+    ViewData["Title"] = "Job Details";
+}
+
+<div class="resume-wrapper">
+    <form asp-controller="Job" asp-action="Detail" method="post">
+        <h1 class="display-4 mb-5">Job Details</h1>
+
+        @await Html.PartialAsync("_JobInput", Model)
+
+        <input type="hidden" asp-for="JobId" />
+        <div class="submit-wrapper">
+            <input type="submit" class="btn btn-primary float-end" value="Save">
+            <a class="btn btn-light" asp-controller="Job" asp-action="List">Back</a>
+        </div>
+    </form>
+</div>

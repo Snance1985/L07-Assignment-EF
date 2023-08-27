@@ -1,0 +1,35 @@
+@model l07_assignment.Models.Job
+
+<div class="form-group">
+    <div class="row mb-4">
+        <label class="control-label col-md-4" asp-for="CompanyName"></label>
+        <input class="form-control col-md-8" asp-for="CompanyName" />
+        <div class="col-10 offset-md-1 text-danger text-right">
+            <span asp-validation-for="CompanyName"></span>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <label class="control-label col-md-4" asp-for="JobTitle"></label>
+        <input class="form-control col-md-8" asp-for="JobTitle" />
+        <div class="col-10 offset-md-1 text-danger text-right">
+            <span asp-validation-for="JobTitle"></span>
+        </div>
+    </div>
+
+    <div class="row mb-4">         
+        <label class="control-label col-md-4" asp-for="JobDescription"></label>
+        <textarea class="form-control col-md-8" asp-for="JobDescription"></textarea>
+        <div class="col-10 offset-md-1 text-danger text-right">
+            <span asp-validation-for="JobDescription"></span>
+        </div>   
+    </div>
+
+    <div class="row mb-4">       
+        <label class="control-label col-md-4" asp-for="YearsWorked"></label>
+        <input class="form-control col-md-8" asp-for="YearsWorked" />
+        <div class="col-10 offset-md-1 text-danger text-right">
+            <span asp-validation-for="YearsWorked"></span>
+        </div>     
+    </div>
+</div>
